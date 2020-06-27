@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function fetchList(params) {
     return request({
-        url: '/post/list',
+        url: '/blog/list',
         method: 'get',
         params: params
     })
@@ -50,7 +50,15 @@ export function fetchSiteInfo() {
 
 export function fetchComment() {
     return request({
-        url: '/blog',
+        url: '/comment',
+        method: 'get',
+        params: {}
+    })
+}
+
+export function fetchBlog() {
+    return request({
+        url: '/article',
         method: 'get',
         params: {}
     })

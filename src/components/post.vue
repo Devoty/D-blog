@@ -21,7 +21,7 @@
                     <div class="comnum">
                         <span>
                             <i class="iconfont iconcomment"></i>
-                            <a href="https://zhebk.cn/Web/Akina.html">{{post.commentsCount}} 条评论</a>
+                            {{post.commentsCount}} 条评论
                         </span>
                     </div>
                     <div class="views">

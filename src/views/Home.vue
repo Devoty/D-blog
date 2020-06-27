@@ -69,80 +69,7 @@
                         title: "文章归档"
                     }
                 ],
-                postList: [
-                    {
-                        banner: "https://s1.ax1x.com/2020/05/14/YDhagx.jpg",
-                        commentsCount: 99,
-                        content: "",
-                        id: 0,
-                        isHot: true,
-                        isTop: true,
-                        pubTime: 85409409164,
-                        summary: "Lua 是一种轻量小巧的脚本语言，能为应用程序提供灵活的扩展和定制功能。",
-                        title: "看一遍闭着眼都会安装Lua了",
-                        viewsCount: 4045
-                    },
-                    {
-                        banner: "https://s1.ax1x.com/2020/05/14/YDhagx.jpg",
-                        commentsCount: 99,
-                        content: "",
-                        id: 1,
-                        isHot: true,
-                        isTop: true,
-                        pubTime: 85409409164,
-                        summary: "Lua 是一种轻量小巧的脚本语言，能为应用程序提供灵活的扩展和定制功能。",
-                        title: "看一遍闭着眼都会安装Lua了",
-                        viewsCount: 4045
-                    },
-                    {
-                        banner: "https://s1.ax1x.com/2020/05/14/YDhagx.jpg",
-                        commentsCount: 99,
-                        content: "",
-                        id: 2,
-                        isHot: true,
-                        isTop: true,
-                        pubTime: 85409409164,
-                        summary: "Lua 是一种轻量小巧的脚本语言，能为应用程序提供灵活的扩展和定制功能。",
-                        title: "看一遍闭着眼都会安装Lua了",
-                        viewsCount: 4045
-                    },
-                    {
-                        banner: "https://s1.ax1x.com/2020/05/14/YDhagx.jpg",
-                        commentsCount: 99,
-                        content: "",
-                        id: 3,
-                        isHot: true,
-                        isTop: true,
-                        pubTime: 85409409164,
-                        summary: "Lua 是一种轻量小巧的脚本语言，能为应用程序提供灵活的扩展和定制功能。",
-                        title: "看一遍闭着眼都会安装Lua了",
-                        viewsCount: 4045
-                    },
-                    {
-                        banner: "https://s1.ax1x.com/2020/05/14/YDhagx.jpg",
-                        commentsCount: 99,
-                        content: "",
-                        id: 4,
-                        isHot: true,
-                        isTop: true,
-                        pubTime: 85409409164,
-                        summary: "Lua 是一种轻量小巧的脚本语言，能为应用程序提供灵活的扩展和定制功能。",
-                        title: "看一遍闭着眼都会安装Lua了",
-                        viewsCount: 4045
-                    },
-                    {
-                        banner: "https://s1.ax1x.com/2020/05/14/YDhagx.jpg",
-                        commentsCount: 99,
-                        content: "",
-                        id: 5,
-                        isHot: true,
-                        isTop: true,
-                        pubTime: 85409409164,
-                        summary: "Lua 是一种轻量小巧的脚本语言，能为应用程序提供灵活的扩展和定制功能。",
-                        title: "看一遍闭着眼都会安装Lua了",
-                        viewsCount: 4045
-                    }
-                ],
+                postList: [],
                 currPage: 1,
                 hasNextPage: false
             }
@@ -181,7 +108,7 @@
             },
             fetchList() {
                 fetchList().then(res => {
-                    this.postList = res.data.items || []
+                    this.postList = res.data || []
                     this.currPage = res.data.page
                     this.hasNextPage = res.data.hasNextPage
                     console.log('------------postList')
@@ -204,7 +131,7 @@
         },
         mounted() {
             // this.fetchFocus();
-            // this.fetchList();
+            this.fetchList();
         }
     }
 </script>

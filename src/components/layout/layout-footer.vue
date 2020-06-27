@@ -1,9 +1,9 @@
 <template>
     <div id="layout-footer">
         <div class="footer-main">
-            <!-- <div class="footer-item" v-if="socials.length">
+            <div class="footer-item" v-if="socials.length">
                 <div v-for="item in socials" :key="item.id"><a target="_blank" class="out-link" :href="item.href"><i class="iconfont" :class="item.icon"></i>{{item.title}}</a></div>
-            </div> -->
+            </div>
             <div class="footer-item">
                 <div style="font-size:17px;font-weight: bold;">资源</div>
                 <div><a target="_blank" class="out-link" href="https://segmentfault.com/weekly?utm_source=sf-footer">每周精选</a></div>
@@ -15,7 +15,7 @@
                 <div><a target="_blank" class="out-link" href="#">☞后台管理</a></div>
             </div>
         </div>
-        <div class="copyright">Copyright © 2020 by <a target="_blank" class="out-link" href="https://www.fengziy.cn">fengziy.cn</a> . All rights reserved. | <a target="_blank" class="out-link" href="http://www.beian.miit.gov.cn">渝ICP备17015355号-1</a></div>
+        <div class="copyright">Copyright © 2020 by <a target="_blank" class="out-link" href="https://www.devoty.top">devoty.top</a> . All rights reserved. | <a target="_blank" class="out-link" href="http://www.beian.miit.gov.cn">皖ICP备20007856号</a></div>
     </div>
 </template>
 

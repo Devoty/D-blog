@@ -3,7 +3,7 @@
         <div class="site-logo">
             <router-link to="/">
                 <img src="@/assets/site-logo.svg" alt="">
-                <p class="site-name">Gblog</p>
+                <!-- <p class="site-name">Thx_blog</p> -->
             </router-link>
         </div>
         <div class="site-menus">
@@ -11,9 +11,9 @@
             <div class="menu-item"><router-link to="/">首页</router-link></div>
             <div class="menu-item hasChild">
                 <a href="#">文章</a>
-                <!-- <div class="childMenu" v-if="category.length">
+                <div class="childMenu" v-if="category.length">
                     <div class="sub-menu" v-for="item in category" :key="item.title"><router-link :to="`/category/${item.title}`">{{item.title}}</router-link></div>
-                </div> -->
+                </div>
             </div>
             <div class="menu-item"><router-link to="/friend">友链</router-link></div>
             <div class="menu-item"><router-link to="/about">关于</router-link></div>
